@@ -6,14 +6,14 @@ class MusicPlayer:
     def __init__(self, root):
         self.root = root
         self.root.title("Reproductor de Música")
-        self.root.geometry("300x250")
-        self.root.config(bg="#333")  # Fondo de la ventana
+        self.root.geometry("600x400")
+        self.root.config(bg="#4a0074")  # Fondo de la ventana
 
         # Inicializar el mixer de pygame
         mixer.init()
 
         # Crear estilo común para los botones
-        button_style = {"bg": "#555", "fg": "white", "font": ("Arial", 12), "relief": "raised"}
+        button_style = {"bg": "#5e66d5", "fg": "white", "font": ("Arial", 12), "relief": "raised"}
 
         # Botón para cargar una canción
         self.load_button = tk.Button(self.root, text="Cargar Canción", command=self.load_song, **button_style)
